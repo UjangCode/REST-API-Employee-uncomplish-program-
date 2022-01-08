@@ -1,0 +1,66 @@
+ERROR - 2022-01-07 10:17:45 --> Table 'pelatihan.e' doesn't exist
+CRITICAL - 2022-01-07 10:17:45 --> Table 'pelatihan.e' doesn't exist
+#0 C:\Users\aji\Desktop\rest api ci\rest api\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\aji\Desktop\rest api ci\rest api\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\aji\Desktop\rest api ci\rest api\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\aji\Desktop\rest api ci\rest api\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\aji\Desktop\rest api ci\rest api\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\aji\Desktop\rest api ci\rest api\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\aji\Desktop\rest api ci\rest api\app\Controllers\Home.php(16): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\aji\Desktop\rest api ci\rest api\system\CodeIgniter.php(825): App\Controllers\Home->index()
+#8 C:\Users\aji\Desktop\rest api ci\rest api\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\Users\aji\Desktop\rest api ci\rest api\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\aji\Desktop\rest api ci\rest api\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\aji\Desktop\rest api ci\rest api\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\aji\\De...')
+#12 {main}
+ERROR - 2022-01-07 10:17:55 --> Table 'pelatihan.emp;oyees' doesn't exist
+CRITICAL - 2022-01-07 10:17:55 --> Table 'pelatihan.emp;oyees' doesn't exist
+#0 C:\Users\aji\Desktop\rest api ci\rest api\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\aji\Desktop\rest api ci\rest api\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\aji\Desktop\rest api ci\rest api\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\aji\Desktop\rest api ci\rest api\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\aji\Desktop\rest api ci\rest api\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\aji\Desktop\rest api ci\rest api\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\aji\Desktop\rest api ci\rest api\app\Controllers\Home.php(16): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\aji\Desktop\rest api ci\rest api\system\CodeIgniter.php(825): App\Controllers\Home->index()
+#8 C:\Users\aji\Desktop\rest api ci\rest api\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\Users\aji\Desktop\rest api ci\rest api\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\aji\Desktop\rest api ci\rest api\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\aji\Desktop\rest api ci\rest api\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\aji\\De...')
+#12 {main}
+CRITICAL - 2022-01-07 10:28:31 --> Allowed fields must be specified for model: App\Models\employeeModel
+#0 C:\Users\aji\Desktop\rest api ci\rest api\system\BaseModel.php(1138): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\empl...')
+#1 C:\Users\aji\Desktop\rest api ci\rest api\system\BaseModel.php(713): CodeIgniter\BaseModel->doProtectFields(Array)
+#2 C:\Users\aji\Desktop\rest api ci\rest api\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#3 C:\Users\aji\Desktop\rest api ci\rest api\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#4 C:\Users\aji\Desktop\rest api ci\rest api\app\Controllers\pegawai.php(22): CodeIgniter\BaseModel->save(Array)
+#5 C:\Users\aji\Desktop\rest api ci\rest api\system\CodeIgniter.php(825): App\Controllers\pegawai->create()
+#6 C:\Users\aji\Desktop\rest api ci\rest api\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pegawai))
+#7 C:\Users\aji\Desktop\rest api ci\rest api\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\aji\Desktop\rest api ci\rest api\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\aji\Desktop\rest api ci\rest api\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\aji\\De...')
+#10 {main}
+CRITICAL - 2022-01-07 10:32:16 --> Undefined property: App\Controllers\pegawai::$emploteeModel
+#0 C:\Users\aji\Desktop\rest api ci\rest api\app\Controllers\pegawai.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\Users\\aji\\De...', 19)
+#1 C:\Users\aji\Desktop\rest api ci\rest api\system\CodeIgniter.php(825): App\Controllers\pegawai->index()
+#2 C:\Users\aji\Desktop\rest api ci\rest api\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pegawai))
+#3 C:\Users\aji\Desktop\rest api ci\rest api\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\aji\Desktop\rest api ci\rest api\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\aji\Desktop\rest api ci\rest api\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\aji\\De...')
+#6 {main}
+CRITICAL - 2022-01-07 10:34:30 --> Undefined property: App\Controllers\pegawai::$emploteeModel
+#0 C:\Users\aji\Desktop\rest api ci\rest api\app\Controllers\pegawai.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\Users\\aji\\De...', 19)
+#1 C:\Users\aji\Desktop\rest api ci\rest api\system\CodeIgniter.php(825): App\Controllers\pegawai->index()
+#2 C:\Users\aji\Desktop\rest api ci\rest api\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pegawai))
+#3 C:\Users\aji\Desktop\rest api ci\rest api\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\aji\Desktop\rest api ci\rest api\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\aji\Desktop\rest api ci\rest api\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\aji\\De...')
+#6 {main}
+CRITICAL - 2022-01-07 10:34:41 --> Array to string conversion
+#0 C:\Users\aji\Desktop\rest api ci\rest api\app\Controllers\pegawai.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', 'C:\\Users\\aji\\De...', 19)
+#1 C:\Users\aji\Desktop\rest api ci\rest api\system\CodeIgniter.php(825): App\Controllers\pegawai->index()
+#2 C:\Users\aji\Desktop\rest api ci\rest api\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pegawai))
+#3 C:\Users\aji\Desktop\rest api ci\rest api\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\aji\Desktop\rest api ci\rest api\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\aji\Desktop\rest api ci\rest api\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\aji\\De...')
+#6 {main}
